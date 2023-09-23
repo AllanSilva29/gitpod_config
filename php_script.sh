@@ -1,3 +1,6 @@
+#apt -y install software-properties-common;
+#add-apt-repository ppa:ondrej/php;
+#update-alternatives --config php;
 sudo apt update -y;
 sudo a2dismod php8.1 -y;
 sudo a2dismod mpm_prefork -y;
