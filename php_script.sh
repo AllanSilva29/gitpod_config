@@ -2,6 +2,7 @@
 #apt -y install software-properties-common;
 #add-apt-repository ppa:ondrej/php;
 #yes y | apt-get install -y php7.4;
+#update-alternatives --set php /usr/bin/php7.4
 #update-alternatives --config php;
 ### INSTALING COMPOSER
 # curl -sS https://getcomposer.org/installer | php
