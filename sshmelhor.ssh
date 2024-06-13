@@ -1,6 +1,6 @@
-ssh-keygen # Coloque a chave ssh dentro do /workspace/nome-do-repo/id_rsa
-read -p "Digite o caminho que colocou a chave PRIVADA (id_rsa): " chave
+# O primeiro comando vc só roda uma vez, dentro de /worspace/nome-do-repo
+# ssh-keygen -t rsa -N '' -f $(pwd)/id_rsa <<< y;
 mkdir -p ~/.ssh/
-cp $chave "$chave.pub" ~/.ssh/
+cp $(pwd)/id_rsa $(pwd)/id_rsa.pub ~/.ssh/
 echo "Chave ssh foi copiada para o diretório ~/.ssh/"
 
