@@ -1,6 +1,6 @@
 # O primeiro comando vc só roda uma vez, dentro de /worspace/nome-do-repo
 # ssh-keygen -t rsa -N '' -f $(pwd)/id_rsa <<< y;
 mkdir -p ~/.ssh/
-cp $(pwd)/id_rsa $(pwd)/id_rsa.pub ~/.ssh/
+cp $(pwd)/id_rsa $(pwd)/id_rsa.pub ~/.ssh/ # Precisa rodar na pasta onde as chaves pública e privada estão
 echo "Chave ssh foi copiada para o diretório ~/.ssh/"
 
